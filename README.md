@@ -13,3 +13,23 @@ An example command might be:
 I can start with the textplay css layout.
 This will get me a page layout, headers, footers, etc.
 and adding basic typography should be no problem.
+
+## Typography Ideas
+
+Use only 3 levels of headings.
+
+Italic and Bold.
+
+Do not use bullet-lists for lists of items, use paragraphs and sentences instead.
+Use bullets for examples and asides.
+
+*   The above 2 paragraphs and the 1 below
+    belong to the same list of ideas.
+    This is a kind of aside demonstrating one of those ideas.
+    When you're done reading it you can resume the list.
+
+    Without a structure like this I'd have to resort to
+    using bullets at the root of this section,
+    but I'm already doing that with paragraphs.
+
+Use blockquotes for quotes.
