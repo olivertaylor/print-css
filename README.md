@@ -6,7 +6,7 @@ to create printable documents from [markdown][markdown] files.
 
 An example command might be:
 
-    pandoc -f markdown -t html < file.md | prince -s ./stylesheet.css - -o ./output.pdf
+    pandoc -s -f markdown -t html < tripwire_encyclopedia.text | prince -s ~/code/print_css/print.css - -o ~/Desktop/test.pdf
 
 [PubCSS][pubCSS] seems to follow the same toolchain.
 
