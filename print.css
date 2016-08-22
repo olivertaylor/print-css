@@ -1,16 +1,12 @@
 @page {
     size: 8.5in 11in;
-    margin-top:1in;
-    margin-right:1.25in;
-    margin-bottom:.5in;
-    margin-left:1.25in;
+    margin: 1.5in;
 }
 
 body {
-    font-family: "Fira Sans";
-    font-size: 10pt;
+    font-family: "Merriweather";
+    font-size: 9pt;
     line-height: 1.3;
-    max-width: 6in;
     margin:0 auto;
 
     page: pages;
@@ -21,43 +17,64 @@ body {
     /* Page Numbers */
     @bottom-right-corner {
         content: counter(page)".";
-        font: 10pt "Fira Sans";
+        font: 9pt "Merriweather";
     }
 }
 
 /* General Typography
 --------------------------------------------------------------------------- */
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight:normal;
+    margin: 0;
+}
 h1 {
     font-size:18pt;
-    text-align: center;
+    font-weight: 100;
+    margin: 0 0 36pt 0;
+    page-break-before: 0;
 }
 h2 {
     font-size:14pt;
+    font-weight:300;
+    font-style:italic;
+    margin-top: 36pt;
+    page-break-before: 0;
 }
 h3 {
     font-size:10pt;
-    text-transform:uppercase;
+    font-weight:600;
+    margin: 12pt 0;
+    page-break-before: 0;
 }
 
-h1 {
-    page-break-before: always;
+hr {
+    border:none;
+    margin: 4em;
 }
 
 p {
     orphans: 2;
     widows: 2;
     white-space: wrap;
-    margin-bottom:0;
 }
-p + p {
-    margin-top: 0;
-    text-indent: 2em;
-    }
 
+/* p + p { */
+/*     margin-top: -1em; */
+/*     text-indent: 1em; */
+/* } */
+
+ul, ol {
+    margin: 0;
+    padding-left:2em;
+}
 li p:first-child {
     margin-bottom:1em;
-    }
+}
 li p:first-child + p {
     text-indent: 0;
-    }
+}
+blockquote {
+    padding: 0;
+    margin: 0 2em;
+}
