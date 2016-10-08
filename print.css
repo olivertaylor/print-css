@@ -1,10 +1,10 @@
 @page {
     size: 8.5in 11in;
-    margin: 1.5in;
+    margin: 1.75in;
 }
 
 body {
-    font-family: "Alegreya";
+    font-family: "Equity Text B";
     font-size: 10pt;
     line-height: 1.4;
     margin:3em auto;
@@ -18,7 +18,7 @@ body {
     /* Page Numbers */
     @bottom-right-corner {
         content: counter(page)".";
-        font: 9pt "Alegreya";
+        font: 9pt "Equity Text B";
     }
 }
 
@@ -50,7 +50,7 @@ h1 {
 h2 {
     font-size:1em;
     margin: 1.5em 0;
-	font-family: "Alegreya SC";
+	font-family: "Equity Caps B";
 	text-transform: lowercase;
 	letter-spacing: .1em;
     border-bottom: 0.5pt solid #999;
@@ -107,7 +107,13 @@ blockquote {
 sub {
 font-size:1em;
 vertical-align:baseline;
-font-family: "Alegreya SC";
+font-family: "Equity Caps B";
 text-transform: lowercase;
 }
 
+code {
+    font-family: "PragmataPro";
+    font-size: 8pt;
+    line-height: 10pt;
+}
+pre {line-height: 8pt;}
