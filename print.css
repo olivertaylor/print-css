@@ -1,5 +1,3 @@
-/* Page Layout
---------------------------------------------------------------------------- */
 @page {
     size: 8.5in 11in;
     margin: 1in 1.75in;
@@ -14,18 +12,18 @@ body {
     /* Page Numbers */
     @bottom-right-corner {
         content: counter(page)".";
-        font: 10pt "Alegreya";
+        font: 10pt "Alegreya Sans";
     }
 }
 
-/* General Typography
---------------------------------------------------------------------------- */
-
 body {
-    font-family: "Alegreya";
+    font-family: "Alegreya Sans";
     font-size: 10pt;
-    line-height: 1.4;
+    font-weight: 400;
+    line-height: 1.2;
     margin:3em auto;
+    background: none;
+    color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,31 +33,27 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size:2.5em;
-    margin: 0 0 1em 0;
     font-style: italic;
-    font-weight: 200;
-    line-height: 1.1em;
+    font-weight: 300;
+    margin: 0 0 1em 0;
 }
 
 h2 {
-    font-size:1.25em;
-    font-family: "Alegreya SC";
-    font-weight: normal;
-	letter-spacing: .1em;
-    border-bottom: 0.5pt solid #ddd;
-    margin: 2em 0 1.25em 0;
-    padding-bottom: .25em;
+    font-family: "Alegreya Sans SC";
+    font-size:1em;
+    font-weight: 500;
+    letter-spacing: 1pt;
+    border-top: 0.5pt solid #777;
+    padding-top: 1em;
+    margin: 1.25em 0 1em 0;
 }
 
 h3 {
     font-size:1em;
-    font-family: "Alegreya";
     font-style: italic;
+    font-weight: 500;;
 	margin: 1em 0;
 }
-
-h3:before { content: ''; }
-h3:after  { content: ''; }
 
 /* TODO: this should get turned into page-break */
 hr {
@@ -73,23 +67,9 @@ p {
     white-space: normal;
 }
 
-span.sc, span.topic {
-    font-family: "Alegreya SC";
-    letter-spacing: .05em;
-}
-
 p + p {
-    text-indent: 2em;
-    margin-top: -1.1em; /* same as body line-height */
-}
-
-p + p span.topic {
-    margin-left: -2em;
-}
-
-p + p span.topic:before {
-    content: '\a';
-    white-space: pre;
+    text-indent: 1.5em;
+    margin-top: -1em;
 }
 
 blockquote p+p {
@@ -103,9 +83,17 @@ li p {
 
 ul, ol {
     margin: 0 0 1em 0;
-    padding-left:1.25em;
     orphans: 2;
     widows: 2;
+}
+
+ul {
+    padding-left: 1.5em;
+    list-style-type: circle;
+}
+
+ol {
+	padding-left: 1.5em;
 }
 
 ol ol, ul ul {
@@ -114,6 +102,20 @@ ol ol, ul ul {
 
 li p + p {
 	margin: 1em 0;
+	text-indent: 0;
+}
+
+span.sc, span.topic {
+    font-family: "Alegreya Sans SC";
+}
+
+p + p span.topic {
+    margin-left: -1.5em;
+}
+
+p + p span.topic:before {
+    content: '\a';
+    white-space: pre;
 }
 
 blockquote {
@@ -124,6 +126,16 @@ blockquote {
 }
 
 code {
-    font-family: "PragmataPro";
-    font-size: 8pt;
+    font-family: "Menlo";
+    font-size: 7pt;
+}
+
+div.topic {
+    margin: 0 0 2.5em 0;
+}
+
+div.topic h2 {
+    border: none;
+    padding: 0;
+    margin: 1em 0;
 }
