@@ -1,6 +1,6 @@
 @page {
     size: 8.5in 11in;
-    margin: 1in 1.75in;
+    margin: 1in 2in 1in 1.5in;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
     font-size: 10pt;
     font-weight: 400;
     line-height: 1.2;
-    margin:3em auto;
+    margin: 1in auto;
     background: none;
     color: #000;
 }
@@ -143,3 +143,18 @@ div.topic h2 {
     padding: 0;
     margin: 1em 0;
 }
+div.sidebar {
+    float:right;
+    width: 1.5in;
+    margin-right: -1.75in;
+    color: #A53331;
+    font-style: italic;
+    font-size: .8em;
+    line-height: 1;
+    padding-top: .3em;
+}
+div.sidebar p {
+    text-indent: 0;
+    margin-top: -1em;
+}
+div.sidebar p + p { margin-top: 1em; }

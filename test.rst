@@ -1,6 +1,7 @@
 .. reStructuredText
 .. role:: sc
 .. role:: topic
+.. role:: sidebar
 
 Heading One
 ###########
@@ -24,6 +25,14 @@ to avoid worse pains.
 
 Heading Two
 ===========
+
+.. sidebar::
+
+    This is a sidebar.
+    You can tell it is so by the way it looks.
+    If you look closely, that is.
+
+    And another paragraph in that sidebar.
 
 :topic:`On the other hand`, we denounce with righteous indignation and dislike
 men who are so beguiled and demoralized by the charms of pleasure of the
