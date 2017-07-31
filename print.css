@@ -1,6 +1,6 @@
 @page {
     size: 8.5in 11in;
-    margin: 1in 2in 1in 1.5in;
+    margin: 1in 1.5in 1in 1.5in;
 }
 
 body {
@@ -78,7 +78,7 @@ blockquote p+p {
 }
 
 li p {
-	margin:0 0 1em 0;
+	margin:0 0 0 0;
 }
 
 ul, ol {
@@ -143,18 +143,20 @@ div.topic h2 {
     padding: 0;
     margin: 1em 0;
 }
+
+h1 + div.topic {
+    margin-top: -1.75em;
+}
+
 div.sidebar {
-    float:right;
-    width: 1.5in;
-    margin-right: -1.75in;
-    color: #A53331;
-    font-style: italic;
-    font-size: .8em;
-    line-height: 1;
-    padding-top: .3em;
+	font-style: italic;
+    margin: 0 2em;
+	font-family: "Alegreya";
 }
-div.sidebar p {
-    text-indent: 0;
-    margin-top: -1em;
+div.sidebar h2 {
+	border:none;
+	margin: 1em 0;
+	letter-spacing: 0;
+	padding-top: 0;
+	font-family: "Alegreya";
 }
-div.sidebar p + p { margin-top: 1em; }
