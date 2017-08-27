@@ -1,0 +1,163 @@
+@page {
+    size: 8.5in 11in;
+    margin: 1in 1.5in 1in 1.5in;
+}
+
+body {
+    page: pages;
+    prince-page-group: start;
+}
+
+@page pages {
+    /* Page Numbers */
+    @bottom-right-corner {
+        content: counter(page)".";
+        font: 10pt "Alegreya Sans";
+    }
+}
+
+body {
+    font-family: "Alegreya Sans";
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 1in auto;
+    background: none;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:normal;
+    margin: 0;
+}
+
+h1 {
+    font-size:2.5em;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 0 1em 0;
+}
+
+h2 {
+    font-family: "Alegreya Sans SC";
+    font-size:1em;
+    font-weight: 500;
+    letter-spacing: 1pt;
+    border-top: 0.5pt solid #777;
+    padding-top: 1em;
+    margin: 1.25em 0 1em 0;
+}
+
+h3 {
+    font-size:1em;
+    font-style: italic;
+    font-weight: 500;;
+	margin: 1em 0;
+}
+
+/* TODO: this should get turned into page-break */
+hr {
+    border:none;
+    page-break-after: always;
+}
+
+p {
+    orphans: 2;
+    widows: 2;
+    white-space: normal;
+}
+
+p + p {
+    text-indent: 1.5em;
+    margin-top: -1em;
+}
+
+blockquote p+p {
+	margin-top: 0;
+	text-indent: 0;
+}
+
+li p {
+	margin:0 0 0 0;
+}
+
+ul, ol {
+    margin: 0 0 1em 0;
+    orphans: 2;
+    widows: 2;
+}
+
+ul {
+    padding-left: 1.5em;
+    list-style-type: circle;
+}
+
+ol {
+	padding-left: 1.5em;
+}
+
+ol ol, ul ul {
+	margin: 1em 0;
+}
+
+li p + p {
+	margin: 1em 0;
+	text-indent: 0;
+}
+
+span.sc, span.topic {
+    font-family: "Alegreya Sans SC";
+}
+
+span.sc {
+    text-transform: lowercase;
+}
+
+p + p span.topic {
+    margin-left: -1.5em;
+}
+
+p + p span.topic:before {
+    content: '\a';
+    white-space: pre;
+}
+
+blockquote {
+    padding: 0 2em;
+    margin: 0;
+    orphans: 2;
+    widows: 2;
+}
+
+pre { line-height: 9pt; }
+code {
+    font-family: "Menlo";
+    font-size: 7pt;
+}
+
+div.topic {
+    margin: 0 0 2.5em 0;
+}
+
+div.topic h2 {
+    border: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+h1 + div.topic {
+    margin-top: -1.75em;
+}
+
+div.sidebar {
+	font-style: italic;
+    margin: 0 2em;
+	font-family: "Alegreya";
+}
+div.sidebar h2 {
+	border:none;
+	margin: 1em 0;
+	letter-spacing: 0;
+	padding-top: 0;
+	font-family: "Alegreya";
+}
