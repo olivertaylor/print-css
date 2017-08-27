@@ -40,6 +40,7 @@ h1 {
 	font-family: "SF Pro Display";
 	font-size:1.8em;
 	font-weight: 700;
+	margin: 0 0 1em 0;
 }
 
 h2 {
@@ -142,5 +143,6 @@ em {
 }
 
 div.topic { margin-bottom: 5em; }
+div.topic h1 { margin-bottom: 0; }
 div.topic h2 { margin: .25em 0 .5em 0; }
 div.topic p {margin: 0; }
