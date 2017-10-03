@@ -107,6 +107,12 @@ li p + p {
 	text-indent: 0;
 }
 
+li blockquote {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-style: italic;
+}
+
 span.sc {
 	text-transform: lowercase;
 	font-variant: small-caps;
@@ -141,6 +147,8 @@ strong {
 em {
 
 }
+
+a, a:hover {color: rgb(0, 122, 255);}
 
 div.topic { margin-bottom: 5em; }
 div.topic h1 { margin-bottom: 0; }
